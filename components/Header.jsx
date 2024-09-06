@@ -8,12 +8,12 @@ import MobileNav from "./MobileNav";
 const Header = () => {
     return (
         <header className="py-8 xl:py-12 text-white">
-            <div className="container mx-auto flex justify-between items-center">
+            <div className="container mx-auto flex justify-between items-center px-4">
                 {/* Logo */}
                 <Link href="/"> 
-                <h1 className="text-4xl font-semibold">
-                    Carl<span className="text-accent">.</span>
-                </h1>
+                    <h1 className="text-4xl font-semibold">
+                        Carl<span className="text-accent">.</span>
+                    </h1>
                 </Link>
 
                 {/* Desktop navigation & hire me button */}
@@ -30,7 +30,7 @@ const Header = () => {
                 </div>
             </div>
         </header>
-    )
-}
+    );
+};
 
 export default Header;
