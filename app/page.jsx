@@ -3,6 +3,7 @@ import { FiDownload } from "react-icons/fi";
 
 // Components
 import Social from "@/components/Social"
+import Photo from "@/components/Photo";
 
 const page = () => {
   return (
@@ -10,7 +11,7 @@ const page = () => {
       <div className="container mx-auto h-full">
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* Text */}
-          <div className="text-center xl:text-left">
+          <div className="text-center xl:text-left order-2 xl:order-none">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
               hello I&apos;m <br /> <span className="text-accent">Carl Patrick Adrian Aguas</span>
@@ -33,7 +34,9 @@ const page = () => {
             </div>
           </div>
           {/* Photo */}
-          <div>photo</div>
+          <div className="order-1 xl:order-none mb-8 xl:mb-0">
+            <Photo />
+          </div>
         </div>
       </div>
     </section>
