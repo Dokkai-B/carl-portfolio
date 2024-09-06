@@ -13,7 +13,7 @@ const page = () => {
           <div className="text-center xl:text-left">
             <span className="text-xl">Software Developer</span>
             <h1 className="h1 mb-6">
-              hello I'm <br /> <span className="text-accent">Carl Patrick Adrian Aguas</span>
+              hello I&apos;m <br /> <span className="text-accent">Carl Patrick Adrian Aguas</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">I excel at crafting elegant digital experiences and I am proficient in various programming languages and technologies.
             </p>
