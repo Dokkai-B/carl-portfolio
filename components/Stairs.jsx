@@ -40,7 +40,8 @@ const Stairs = () => {
                     ease: "easeInOut",
                     delay: reverseIndex(index) * 0.1,
             }} 
-            className="h-ful w-full bg-white relative"
+            style={{ backgroundColor: "#0d1a27" }} // Set the background color using a hex value
+            className="h-full w-full relative"
             />
         );
     })} 

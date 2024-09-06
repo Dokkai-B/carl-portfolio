@@ -38,10 +38,10 @@ module.exports = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       colors: {
-        primary: "#1c1c22",
+        primary: "#1a2735",
         accent: {
-			DEFAULT: "#00ff99",
-			hover: "#00ff99",
+			DEFAULT: "#ffc684",
+			hover: "#ffc684",
 		},
       },
       borderRadius: {
