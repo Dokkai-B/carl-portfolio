@@ -21,7 +21,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        primary: "var(--font-jetbrainsMono)", // Define your custom font here
+        primary: "var(--font-jetbrainsMono)",
       },
       keyframes: {
         "accordion-down": {
@@ -40,14 +40,9 @@ module.exports = {
       colors: {
         primary: "#1a2735",
         accent: {
-			DEFAULT: "#ffc684",
-			hover: "#ffc684",
-		},
-      },
-      borderRadius: {
-        lg: "var(--radius)",
-        md: "calc(var(--radius) - 2px)",
-        sm: "calc(var(--radius) - 4px)",
+          DEFAULT: "#ffc684",
+          hover: "#ffc684",
+        },
       },
     },
   },
