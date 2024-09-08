@@ -8,29 +8,29 @@ const services = [
     num: "01",
     title: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
-    href: ""
+      "Creating responsive websites using HTML, CSS, and JavaScript, along with frameworks like React and Next.js. Focused on delivering user-friendly interfaces for a seamless digital experience across all devices.",
+    href: "https://www.linkedin.com/in/carlaguas"
   },
   {
     num: "02",
-    title: "UI/UX Design",
+    title: "Mobile Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
-    href: ""
+      "Developing high-performance apps for iOS and Android with a strong emphasis on user experience, security, and interactive design. Ensuring seamless functionality to meet diverse user needs.",
+    href: "https://www.linkedin.com/in/carlaguas"
   },
   {
     num: "03",
-    title: "Logo Design",
+    title: "Desktop Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
-    href: ""
+      "Building efficient desktop applications tailored to client needs, compatible with Windows and macOS. Specializing in cross-platform solutions that are secure, responsive, and scalable.",
+    href: "https://www.linkedin.com/in/carlaguas"
   },
   {
     num: "04",
-    title: "SEO",
+    title: "Digital Arts",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.",
-    href: ""
+      "Designing captivating digital art using tools like Adobe Creative Suite and Figma. Services include branding, digital illustrations, and UI/UX design, transforming concepts into visually compelling experiences.",
+    href: "https://www.linkedin.com/in/carlaguas"
   },
 
 ];
@@ -41,11 +41,11 @@ const Services = () => {
   return (
     <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0">
       <div className="container mx-auto">
-        <motion.div 
-          initial={{opacity: 0}} 
+        <motion.div
+          initial={{ opacity: 0 }}
           animate={{
-              opacity: 1,
-              transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
+            opacity: 1,
+            transition: { delay: 2.4, duration: 0.4, ease: "easeIn" },
           }}
           className="grid grid-cols-1 md:grid-cols-2 gap-[60px]"
         >
@@ -55,9 +55,9 @@ const Services = () => {
                 {/* Top */}
                 <div className="w-full flex justify-between items-center">
                   <div className="text-5xl font-extrabold text-outline text-transparent group-hover:text-outline-hover transition-all duration-500">{service.num}</div>
-                    <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
-                      <BsArrowDownRight className="text-primary text-3xl"/>
-                    </Link>
+                  <Link href={service.href} className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-accent transition-all duration-500 flex justify-center items-center hover:-rotate-45">
+                    <BsArrowDownRight className="text-primary text-3xl" />
+                  </Link>
                 </div>
                 {/* Title */}
                 <h2 className="text-[42px] font-bold leading-none text-white group-hover:text-accent transition-all duration-500">{service.title}</h2>

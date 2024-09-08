@@ -1,22 +1,13 @@
 "use client";
 
-import {
-  FaHtml5,
-  FaCss3,
-  FaJs,
-  FaReact,
-  FaFigma,
-  FaNodeJs
-} from 'react-icons/fa';
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaFigma, FaJava, FaPython, FaPhp, FaWindows, FaAndroid, FaDatabase } from 'react-icons/fa';
 
-import {
-  SiTailwindcss, SiNextdotjs
-} from "react-icons/si";
+import { SiNextdotjs, SiTailwindcss, SiFirebase, SiMysql, SiCplusplus, SiCsharp, SiCanva, SiExpo } from 'react-icons/si';
 
 // About data
 const about = {
   title: "About Me",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas.",
+  description: "I am Carl Patrick Adrian Aguas, an aspiring developer with a passion for creating innovative digital solutions. With over a year of experience, I have developed strong skills in both front-end and back-end development, complemented by my ability to communicate effectively in both English and Filipino. Currently available for freelance opportunities, I am eager to bring my creativity and technical expertise to new challenges.",
   info: [
     {
       fieldName: "Name",
@@ -52,33 +43,38 @@ const about = {
 // Experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
-  title: "My experience",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas.",
+  title: "My Experience",
+  description: "As an aspiring Full-Stack Developer and experienced Graphic Designer, I have developed a range of skills through various projects and freelance roles. My background includes creating engaging visuals, designing user interfaces, and contributing to web and mobile development projects. I am passionate about combining creativity with technical skills to build impactful digital solutions.",
   items: [
     {
-      company: "Tech Solutions Inc.",
+      company: "Women's Club",
       position: "Full-Stack Developer",
-      duration: "2022 - Present",
+      duration: "April 2024 - May 2024",
     },
     {
-      company: "Web Design Studio",
-      position: "Front-End Developer",
-      duration: "Summer 2021",
+      company: "JZ Perfumery",
+      position: "Freelance Graphic Designer",
+      duration: "2021-2023",
     },
     {
-      company: "E-commerce Startup",
-      position: "Freelance Web Developer",
-      duration: "2020-2021",
+      company: "Classic Watch MNL",
+      position: "Freelance Logo Designer",
+      duration: "February 2022",
     },
     {
-      company: "Tech Academy",
-      position: "Teaching Assistant",
-      duration: "2019-2020",
+      company: "Lufong",
+      position: "Freelance Graphic Designer",
+      duration: "December 2021 - January 2022",
     },
     {
-      company: "Digital Agency",
-      position: "UI/UX Designer",
-      duration: "2018-2019",
+      company: "Rocket Fuel",
+      position: "Freelance Logo Designer",
+      duration: "June 2021",
+    },
+    {
+      company: "Next",
+      position: "Freelance Video Editor",
+      duration: "February 2020 - March 2020",
     },
   ]
 };
@@ -86,46 +82,31 @@ const experience = {
 // Education data
 const education = {
   icon: "/assets/resume/cap.svg",
-  title: "My education",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas.",
+  title: "My Education",
+  description: "I'm currently pursuing a Bachelor of Science in Computer Science at Mapúa University in Makati, where I am developing strong technical skills in software development, web development, and data management. This program has also helped me strengthen essential soft skills such as communication, teamwork, leadership, critical thinking, and time management, preparing me for a dynamic career in technology.",
   items: [
     {
-      institution: "Online Course Platform",
-      degree: "Full Stack Web Development bootcamp",
-      duration: "2021",
+      institution: "Mapúa University",
+      degree: "Bachelor of Science in Computer Science",
+      duration: "2021 - Present",
     },
     {
-      institution: "Codeacademy",
-      degree: "Front-end Track",
-      duration: "2022",
+      institution: "Centro Escolar University",
+      degree: "Senior Highschool (STEM strand)",
+      duration: "2019 - 2021",
     },
     {
-      institution: "Online Course",
-      degree: "Programming courese",
-      duration: "2020 - 2021",
-    },
-    {
-      institution: "Tech institute",
-      degree: "Certified Web Developer",
-      duration: "2019",
-    },
-    {
-      institution: "Design School",
-      degree: "Deiploma in Graphic Design",
-      duration: "2016 - 2018",
-    },
-    {
-      institution: "Community College",
-      degree: "Associate Degree in Computer Science",
-      duration: "2014 - 2016",
+      institution: "College of San Benildo-Rizal",
+      degree: "Grade 7 to Grade 10",
+      duration: "2015 - 2019",
     },
   ]
 };
 
 // Skills data
 const skills = {
-  title: "My skills",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut purus eget sapien egestas.",
+  title: "My Skills",
+  description: "I possess a versatile skill set in both front-end and back-end development, utilizing modern frameworks and programming languages. I am also experienced in design tools and have a solid foundation in database management, software development, and mobile app creation.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -158,6 +139,50 @@ const skills = {
     {
       icon: <FaFigma />,
       name: "figma",
+    },
+    {
+      icon: <FaWindows />,
+      name: "Windows",
+    },
+    {
+      icon: <FaJava />,
+      name: "Java",
+    },
+    {
+      icon: <FaPython />,
+      name: "Python",
+    },
+    {
+      icon: <FaPhp />,
+      name: "PHP",
+    },
+    {
+      icon: <FaAndroid />,
+      name: "Android Studio",
+    },
+    {
+      icon: <SiFirebase />,
+      name: "Firebase",
+    },
+    {
+      icon: <SiMysql />,
+      name: "MySQL",
+    },
+    {
+      icon: <SiCplusplus />,
+      name: "C++",
+    },
+    {
+      icon: <SiCsharp />,
+      name: "C#",
+    },
+    {
+      icon: <SiCanva />,
+      name: "Canva",
+    },
+    {
+      icon: <SiExpo />,
+      name: "Expo",
     },
   ]
 };
@@ -229,7 +254,7 @@ const Resume = () => {
           <TabsContent value="education" className="w-full">
             <div className="flex flex-col gap-[30px] text-center xl:text-left">
               <h3 className="text-4xl font-bold">{education.title}</h3>
-              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">       {experience.description}</p>
+              <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">       {education.description}</p>
               <ScrollArea className="h-[400px]">
                 <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
                   {education.items.map((item, index) => {
@@ -262,7 +287,7 @@ const Resume = () => {
                 <h3 className="text-4xl font-bold">{skills.title}</h3>
                 <p className="max-w-[600px] text-white/60 mx-auto xl:mx-0">{skills.description}</p>
               </div>
-              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 xl:gap-[30px]">
+              <ul className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4 xl:gap-[30px]">
                 {skills.skillList.map((skill, index) => {
                   return <li key={index}>
                     <TooltipProvider delayDuration={100}>

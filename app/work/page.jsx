@@ -22,9 +22,9 @@ import WorkSliderBtns from "@/components/WorkSliderBtns";
 const projects = [
   {
     num: "01",
-    category: "frontend",
+    category: "Full-Stack Project",
     title: "Project 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "The proposed web application for the Women's Club organization in Quezon City is designed to modernize and streamline their operations, focusing on efficient management of members, events, and donations. The primary purpose of the website is to enhance the organization's ability to support vulnerable community members by providing a user-friendly platform that facilitates seamless communication, transparent tracking of activities, and efficient management of resources. Key features include member management for registration and profile updates, events management for creating and tracking volunteer opportunities, and donations management to record and monitor contributions. The application is built using React for robust front-end development, Chakra UI for a clean and accessible interface, and Figma for intuitive UI/UX design. Firebase serves as the backend database, ensuring secure data management, while the website is deployed using Vercel, ensuring fast and reliable performance. Additional technologies include HTML and CSS for the overall structure and styling of the website, ensuring a cohesive and responsive design.",
     stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
     image: "/assets/work/thumb1.png",
     live: "",
@@ -32,9 +32,9 @@ const projects = [
   },
   {
     num: "02",
-    category: "fullstack",
+    category: "Full-Stack Project",
     title: "Project 2",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    description: "Developed SaveEat, an innovative mobile application that seamlessly integrates nutrition tracking with budget management, empowering users to make informed dietary choices while adhering to financial limits. Key features include personalized meal planning based on nutritional goals and budget constraints, real-time insights into spending and nutritional information, and a user-friendly interface for easy logging of meals and expenses. The application was built using React Native for cross-platform development, Android Studio for Android-specific optimizations, Firebase for backend services, and JavaScript as the primary language, with Git for version control. SaveEat was evaluated using the System Usability Scale (SUS), achieving a score of 69.25, indicating good usability with room for further enhancements.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
     image: "/assets/work/thumb2.png",
     live: "",
@@ -42,8 +42,18 @@ const projects = [
   },
   {
     num: "03",
-    category: "frontend",
+    category: "Full-Stack Project",
     title: "Project 3",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+    image: "/assets/work/thumb3.png",
+    live: "",
+    github: "",
+  },
+  {
+    num: "04",
+    category: "Full-Stack Project",
+    title: "Project 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
     image: "/assets/work/thumb3.png",
