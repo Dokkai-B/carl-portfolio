@@ -23,42 +23,42 @@ const projects = [
   {
     num: "01",
     category: "Full-Stack Project",
-    title: "Project 1",
-    description: "The proposed web application for the Women's Club organization in Quezon City is designed to modernize and streamline their operations, focusing on efficient management of members, events, and donations. The primary purpose of the website is to enhance the organization's ability to support vulnerable community members by providing a user-friendly platform that facilitates seamless communication, transparent tracking of activities, and efficient management of resources. Key features include member management for registration and profile updates, events management for creating and tracking volunteer opportunities, and donations management to record and monitor contributions. The application is built using React for robust front-end development, Chakra UI for a clean and accessible interface, and Figma for intuitive UI/UX design. Firebase serves as the backend database, ensuring secure data management, while the website is deployed using Vercel, ensuring fast and reliable performance. Additional technologies include HTML and CSS for the overall structure and styling of the website, ensuring a cohesive and responsive design.",
-    stack: [{ name: "Html 5" }, { name: "Css 3" }, { name: "Javascript" }],
+    title: "Womens Club",
+    description: "The Women's Club web application streamlines member, event, and donation management. The platform enables efficient communication, transparent activity tracking, and resource management. Key features include member registration, event coordination, and donation tracking. Built with React, Chakra UI, Figma, and Firebase, and deployed on Vercel, it ensures a clean interface, secure data, and reliable performance.",
+    stack: [{ name: "HTML" }, { name: "CSS" }, { name: "JavaScript" }],
     image: "/assets/work/thumb1.png",
-    live: "",
-    github: "",
+    live: "https://womensclub.vercel.app/",
+    github: "https://github.com/Dokkai-B/womens-club",
   },
   {
     num: "02",
     category: "Full-Stack Project",
-    title: "Project 2",
-    description: "Developed SaveEat, an innovative mobile application that seamlessly integrates nutrition tracking with budget management, empowering users to make informed dietary choices while adhering to financial limits. Key features include personalized meal planning based on nutritional goals and budget constraints, real-time insights into spending and nutritional information, and a user-friendly interface for easy logging of meals and expenses. The application was built using React Native for cross-platform development, Android Studio for Android-specific optimizations, Firebase for backend services, and JavaScript as the primary language, with Git for version control. SaveEat was evaluated using the System Usability Scale (SUS), achieving a score of 69.25, indicating good usability with room for further enhancements.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }, { name: "Node.js" }],
+    title: "SaveEat",
+    description: "SaveEat is a mobile app that combines nutrition tracking with budget management, helping users make healthy dietary choices within financial limits. It features personalized meal plans, real-time spending and nutrition insights, and a user-friendly interface for logging meals and expenses. Developed with React Native, Android Studio, Firebase, and JavaScript, SaveEat scored 69.25 on the System Usability Scale (SUS), reflecting good usability with room for improvement",
+    stack: [{ name: "Firebase" }, { name: "JavaScript" }, { name: "React Native" }],
     image: "/assets/work/thumb2.png",
-    live: "",
-    github: "",
+    live: "/assets/research/SaveEat.pdf",
+    github: "https://github.com/Dokkai-B/saveeat",
   },
   {
     num: "03",
     category: "Full-Stack Project",
-    title: "Project 3",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
+    title: "Heart to Art",
+    description: "Heart to Art is a mobile app that connects artists with clients, offering a platform to showcase art and manage commissions. It features an artist directory, commission requests, and a messaging system. Built with React Native and Firebase, the app provides a user-friendly experience, secure data, and real-time updates, enhancing visibility and opportunities for artists.",
+    stack: [{ name: "React Native" }, { name: "Expo" }, { name: "Firebase" }],
     image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    live: "/assets/research/HearttoArt.pdf",
+    github: "https://github.com/vladasblood/SE_HeartToArt",
   },
   {
     num: "04",
     category: "Full-Stack Project",
-    title: "Project 4",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-    stack: [{ name: "Next.js" }, { name: "Tailwind.css" }],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    github: "",
+    title: "Lost Paws",
+    description: "LostPaws is a web platform that helps reunite lost pets with their owners and facilitates adoptions. Owners can post missing pet details, while finders report strays to partnered facilities. Unclaimed pets are listed for adoption, relying on community efforts and partnerships to care for the animals until they are reunited or adopted.",
+    stack: [{ name: "PHP" }, { name: "MySQL" }],
+    image: "/assets/work/thumb4.png",
+    live: "/assets/research/LostPaws.pdf",
+    github: "https://github.com/vladasblood/LostPaws",
   },
 ]
 
@@ -75,8 +75,9 @@ const Work = () => {
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, 
-        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" } 
+      animate={{
+        opacity: 1,
+        transition: { delay: 2.4, duration: 0.4, ease: "easeIn" }
       }}
       className="min-h-[80vh] flex flex-col justify-center py-12 xl:px-0">
       <div className="container mx-auto">
@@ -108,7 +109,8 @@ const Work = () => {
               {/* Buttons */}
               <div className="flex items-center gap-4">
                 {/* Live project button */}
-                <Link href={project.live}>
+                {/* Live project button */}
+                <a href={project.live} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="w-[70px] h-[70px] rounded-full bg-white/5 flex justify-center items-center group">
@@ -119,7 +121,7 @@ const Work = () => {
                       </TooltipContent>
                     </Tooltip>
                   </TooltipProvider>
-                </Link>
+                </a>
                 {/* Github project button */}
                 <Link href={project.github}>
                   <TooltipProvider delayDuration={100}>
