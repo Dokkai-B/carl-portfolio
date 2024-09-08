@@ -4,6 +4,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "@/components/Social";
 import Photo from "@/components/Photo";
 import Stats from "@/components/Stats";
+import { Anchor } from "@/components/ui/anchor"; // Import the custom Anchor component
 
 const page = () => {
   return (
@@ -21,15 +22,17 @@ const page = () => {
             </p>
             {/* Button and Socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <a
+              <Anchor
                 href="/assets/cv/Carl_Aguas_Resume.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="uppercase flex items-center gap-2 bg-transparent border-2 border-accent text-accent px-6 py-3 rounded-full hover:bg-accent hover:text-primary transition duration-500"
+                variant="outline" // Use the variant you want
+                size="lg" // Use the size you want
+                className="uppercase flex items-center gap-2"
               >
                 <span>Download CV</span>
                 <FiDownload className="text-xl" />
-              </a>
+              </Anchor>
               <div className="mb-8 xl:mb-0">
                 <Social
                   containerStyles="flex gap-6"
