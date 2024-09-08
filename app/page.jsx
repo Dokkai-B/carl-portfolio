@@ -12,19 +12,19 @@ const page = () => {
         <div className="flex flex-col xl:flex-row items-center justify-between xl:pt-8 xl:pb-24">
           {/* Text */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Aspiring Full-Stack Developer</span>
             <h1 className="h1 mb-6">
               Hello I&apos;m <br /> <span className="text-accent">Carl Patrick Adrian Aguas</span>
             </h1>
             <p className="max-w-[500px] mb-9 text-white/80">
-              I excel at crafting elegant digital experiences and I am
-              proficient in various programming languages and technologies.
+              I specialize in developing user-friendly digital solutions and have a strong command of multiple programming languages and frameworks.
             </p>
             {/* Button and Socials*/}
             <div className="flex flex-col xl:flex-row items-center gap-8">
               <a
                 href="/assets/cv/Carl_Aguas_Resume.pdf"
-                download
+                target="_blank"
+                rel="noopener noreferrer"
                 className="uppercase flex items-center gap-2 bg-transparent border-2 border-accent text-accent px-6 py-3 rounded-full hover:bg-accent hover:text-primary transition duration-500"
               >
                 <span>Download CV</span>
