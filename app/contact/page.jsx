@@ -58,20 +58,20 @@ const Contact = () => {
   // Handler for form submission
   const handleSubmit = (e) => {
     e.preventDefault();
-
+  
     const templateParams = {
       from_name: `${formData.firstName} ${formData.lastName}`,
       to_name: "Carl Patrick Adrian Aguas",
       reply_to: formData.email,
       message: formData.message,
     };
-
+  
     emailjs
       .send(
-        "service_klktepa",  // Replace with your EmailJS service ID
-        "template_awu3gbb", // Replace with your EmailJS template ID
+        process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID,  // Correctly prefixed environment variable
+        process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID, // Correctly prefixed environment variable
         templateParams,
-        "fC4Z0LM8IMCn8O1eM"      // Replace with your EmailJS user ID
+        process.env.NEXT_PUBLIC_EMAILJS_USER_ID      // Correctly prefixed environment variable
       )
       .then(
         (response) => {
@@ -84,6 +84,7 @@ const Contact = () => {
         }
       );
   };
+  
 
   return (
     <motion.section
