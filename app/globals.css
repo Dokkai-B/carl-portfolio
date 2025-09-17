@@ -3,8 +3,26 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    /* Light theme variables (default) */
+    --bg: #DCD7C9; /* Sand/Cream */
+    --fg: #2C3639; /* Charcoal */
+    --muted: #3F4E4F; /* Slate */
+    --accent: #A27B5C; /* Brass */
+  }
+
+  .dark {
+    /* Dark theme variables */
+    --bg: #2C3639; /* Charcoal */
+    --fg: #DCD7C9; /* Sand/Cream */
+    --muted: #3F4E4F; /* Slate */
+    --accent: #A27B5C; /* Brass */
+  }
+
   body {
-    @apply font-primary bg-primary text-white leading-loose;
+    @apply font-primary leading-loose;
+    background-color: var(--bg);
+    color: var(--fg);
   }
   .h1 {
     @apply text-[48px] xl:text-[80px] leading-[1.1] font-semibold;
